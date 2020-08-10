@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /aftersend.html/
+Disallow: /offer.html/
+Disallow: /errorsend.html/
+Disallow: /error.html/
+
+Disallow: /successful.php/
+
+Host: https://economolymp.ru/
+Sitemap: https://economolymp.ru/sitemap.xml
