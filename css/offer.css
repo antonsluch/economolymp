@@ -1,0 +1,53 @@
+.offer {
+  background: #4f566b;
+  width: 100%;
+  margin: 0 auto -120px;
+  padding: 70px 0;
+}
+
+.offerTop {
+  max-width: 800px;
+  width: 90%;
+  margin: 50px auto 30px;
+  font: 25px/25px Robotobold;
+  color: #fff;
+  text-align: left;
+}
+
+.offerText {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  font: 16px/25px HNRoman;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: justify;
+}
+
+.offerTopFirst {
+  margin: 0 auto 30px;
+}
+
+.offerTextImg {
+  height: 60px;
+  vertical-align: middle;
+  border-radius: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.18);
+}
+
+.footerTextA {
+  text-decoration: underline;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+  .offerTop {
+    font-size: 20px;
+  }
+  .offerText {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,228 @@
+.coursesTop {
+  font: 30px/30px RobotoBold;
+  margin: 60px auto 70px;
+}
+
+.courseItem {
+  border-radius: 5px;
+  background: rgba(64, 70, 89, 0.05);
+  box-shadow: 0 20px 40px 0 rgba(64, 70, 89, 0.2);
+  padding: 30px;
+  max-width: 220px;
+  width: 100%;
+  margin: 0 35px 30px;
+}
+
+.courseItemTop {
+  font: 20px/25px RobotoBold;
+  text-align: center;
+  min-height: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.courseItemText {
+  font: 14px/20px HNRoman;
+  text-align: justify;
+  min-height: 80px;
+}
+
+.courseItemInfo {
+  font: 14px/20px HNBold;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.courseItemInfoChangeSchedule {
+  font: 14px/20px HNBold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.courseItemPrice {
+  font: 35px/35px RobotoBold;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.courseItemPrice span {
+  font: 25px/40px RobotoBold;
+  text-decoration: line-through;
+}
+
+.courseDesc {
+  font: 14px/40px RobotoBold;
+  width: 120px;
+  background: #db9f3c;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  transition: 0.3s;
+}
+
+.courseDesc::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.courseDesc:hover {
+  background: #404659;
+}
+
+.courseDesc:hover::after {
+  border-right: 10px solid #db9f3c;
+}
+
+.coursesTest {
+  display: block;
+  max-width: 750px;
+  width: 100%;
+  text-align: center;
+  font: 30px/35px RobotoBold;
+  margin: 70px auto 90px;
+}
+
+.coursesTest a,
+.coursesSales a {
+  color: #db9f3c;
+  text-decoration: underline;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.coursesSales {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  font: 30px/35px RobotoBold;
+}
+
+.coursesTest a:hover,
+.coursesSales a:hover {
+  text-decoration: none;
+}
+
+.lectureFree {
+  text-align: center;
+}
+
+.lectureFreeText {
+  text-align: center;
+  font: 30px/35px RobotoBold;
+  margin: 70px auto 20px;
+}
+
+.lectureFreeBtn {
+  font: 14px/40px RobotoBold;
+  width: 180px;
+  background: #db9f3c;
+  text-align: center;
+  display: block;
+  margin: 0 auto 30px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lectureFreeBtn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.lectureFreeBtn:hover {
+  background: #404659;
+}
+
+.lectureFreeBtn:hover::after {
+  border-right: 10px solid #db9f3c;
+}
+
+.lectureFreeForm {
+  display: none;
+}
+
+.lectureFreeFormText {
+  font: 20px/20px RobotoBold;
+  margin: 0 auto;
+}
+
+.lectureFreeInput {
+  width: 210px;
+  color: #404659;
+  background: #fff;
+  border: 0;
+  text-indent: 20px;
+  padding: 10px 5px;
+  margin: 30px 10px;
+  outline: none;
+  font: 14px/25px HNRoman;
+  box-shadow: inset 0 0 0 2px #404659;
+  transition: 0.3s;
+}
+
+.lectureFreeInput:hover {
+  box-shadow: inset 0 0 0 2px rgba(64, 70, 89, 0.5);
+}
+
+.lectureFreeInput::placeholder {
+  color: #404659;
+}
+
+.lectureFreeFormBtn {
+  background: #db9f3c;
+  font: 14px/25px RobotoBold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  border: 0;
+  transition: 0.3s;
+  margin: 30px 10px;
+  cursor: pointer;
+}
+
+.lectureFreeFormBtn:hover {
+  background: #c58d30;
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+
+  .courseItem {
+    box-shadow: 0 10px 20px 0 rgba(64, 70, 89, 0.2);
+    margin: 0 auto 30px;
+  }
+
+  .coursesTest,
+  .coursesSales {
+    width: 95%;
+    text-align: justify;
+    font: 20px/25px RobotoBold;
+  }
+
+  .lectureFreeFormBtn {
+    display: block;
+    margin: 30px auto;
+  }
+}

@@ -1,0 +1,267 @@
+.webinarTop {
+  background: url(../images/webinars/webinar-bg.png) no-repeat center 30% / cover;
+  padding: 70px 0;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.8);
+}
+
+.webinarTopText {
+  font: 40px/40px RobotoBold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.webinarTopTextBottom {
+  font: 30px/40px HNBold;
+  padding: 30px 25px;
+  margin: 0 auto;
+  background: #db9f3c;
+  display: block;
+  color: #fff;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.webinarTopTextBottom::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #fff;
+  z-index: 3;
+}
+
+.webinarDate {
+    margin: 70px auto 0;
+    max-width: 350px;
+    width: 100%;
+    font: 30px/30px HNBold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.webinarDate span {
+      font: 60px/60px HNBold;
+    display: block;
+    margin: 15px auto 0;
+}
+.webinarDate b{
+    font: 20px/20px HNBold;
+    display: block;
+}
+.webinarDateImg {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 5px auto 0;
+}
+
+.webinarBlock {
+  max-width: 450px;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.webinarBlockTop {
+  font: 30px/30px HNBold;
+  margin: 0 auto 25px;
+}
+
+.webinarBlockText, .webinarBlockTextThin {
+  font: 16px/25px HNBold;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.webinarBlockTextThin {
+  font: 16px/25px HNRoman;
+}
+
+.webinarForm {
+  padding: 40px 65px;
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #db9f3c;
+  margin: 120px auto 0;
+}
+
+.webinarFormTop {
+  font: 26px/30px HNBold;
+  color: #fff;
+  text-align: left;
+  max-width: 340px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.webinarFormTop span {
+  font: 18px/25px HNBold;
+}
+
+.webinarFormBlock {
+  max-width: 240px;
+}
+
+.webinarInput {
+  width: 220px;
+  color: #fff;
+  background-color: #db9f3c;
+  border: 0;
+  text-indent: 20px;
+  padding: 0 10px;
+  margin: 0 auto 20px;
+  outline: none;
+  font: 16px/56px HNRoman;
+  display: block;
+  -webkit-border: 2px solid #fff;
+  border: 2px solid #fff;
+}
+
+.webinarInput::placeholder {
+  color: #fff;
+}
+
+.webinarFormBtn {
+  display: block;
+  font: 14px/60px RobotoBold;
+  text-transform: uppercase;
+  color: #404659;
+  background: #fff;
+  width: 240px;
+  padding: 0;
+  border: 0;
+  transition: 0.3s;
+  z-index: 20;
+  position: relative;
+  cursor: pointer;
+}
+
+.webinarFormBtn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.webinarFormBtn:hover {
+  background: #404659;
+  color: #fff;
+}
+
+.webinarFormBtn:hover::after {
+  border-right: 10px solid #fff;
+}
+
+.webinarFormBlockSpan {
+  display: block;
+  font: 10px/10px HNRoman;
+  opacity: 0.6;
+  color: #fff;
+  margin: 5px auto 25px;
+}
+
+.webinarInputLast {
+  margin: 0 auto;
+}
+
+.webinarDiv {
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  padding: 35px 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.webinarBlockTextUl{
+    width: 93%;
+    padding-left: 7%;
+}
+
+@media all and (max-device-width:1024px) {
+  body {
+    min-width: 630px;
+  }
+
+  .webinarForm {
+    display: block;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .webinarFormTop {
+    margin: 0 auto 50px;
+  }
+
+  .webinarFormBlock {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+
+  .webinarTopTextBottom {
+    font: 20px/30px HNBold;
+    padding: 20px 5%;
+    width: 90%;
+  }
+
+  .webinarBlock {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .webinarDate {
+    font: 20px/35px HNBold;
+    margin: 50px auto 0;
+  }
+
+  .webinarDate span {
+    font: 60px/60px HNBold;
+    display: block;
+  }
+
+  .webinarBlockTop {
+    font: 20px/20px HNBold;
+    margin: 0 auto 25px;
+  }
+
+  .webinarBlockText, .webinarBlockTextThin {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .webinarFormTop {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .webinarFormTop span {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+  }
+
+  .webinarForm {
+    margin: 120px auto -120px;
+  }
+  
+  .webinarBlockRight{
+      margin: 0 auto -50px;
+  }
+}

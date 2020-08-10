@@ -1,0 +1,111 @@
+body {
+  background: #f8f8f8;
+  color: #404659;
+}
+
+.paymentForm {
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  margin: 8px auto;
+}
+
+.paymentLogo {
+  display: block;
+  height: 25px;
+  width: auto;
+}
+
+.paymentText {
+  font: 16px/20px HNRoman;
+  text-align: justify;
+  margin: 30px auto;
+}
+
+.paymentText span {
+  font-family: HNBold;
+}
+
+.paymentInput {
+  width: 210px;
+  color: #404659;
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  text-indent: 20px;
+  display: block;
+  padding: 10px 5px;
+  margin: 0 auto 15px;
+  outline: none;
+  font: 14px/25px HNRoman;
+}
+
+.paymentInput::placeholder {
+  color: #404659;
+}
+
+.paymentFormBtn {
+  background: #db9f3c;
+  font: 14px/25px RobotoBold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: block;
+  color: #fff;
+  border: 0;
+  transition: 0.3s;
+  margin: 30px auto 10px;
+  cursor: pointer;
+  width: 222px;
+}
+
+.paymentFormBtn:hover {
+  background: #404659;
+}
+
+.offerPayment {
+  font: 10px/12px HNRoman;
+  opacity: 0.5;
+  text-align: center;
+  display: block;
+  max-width: 222px;
+  text-decoration: underline;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.offerPayment:hover {
+  opacity: 1;
+}
+
+.afterPayment {
+  background: #db9f3c;
+  font: 14px/25px RobotoBold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: block;
+  color: #fff;
+  border: 0;
+  transition: 0.3s;
+  margin: 30px auto 10px;
+  cursor: pointer;
+  width: 222px;
+}
+
+.afterPayment:hover {
+  background: #404659;
+}
+
+.afterPaymentImg {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 20px auto;
+}
+
+.paymentTextBold {
+  font: 20px/25px HNBold;
+  text-align: center;
+  margin: 30px auto;
+}

@@ -1,0 +1,925 @@
+.indexHeader {
+  width: 100%;
+  padding: 120px 0;
+  background: url(../images/index/back.png) no-repeat center / cover;
+  box-shadow: inset 0 0 0 10000px rgba(34, 39, 54, 0.7);
+  text-align: center;
+}
+
+.indexHeaderInside {
+  max-width: 890px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.indexHeaderTop {
+  font: 58px/60px RobotoBold;
+  color: #fff;
+}
+
+.indexHeaderBottom {
+  font: 29px/30px RobotoBold;
+  color: #fff;
+  margin: 30px auto;
+}
+
+.indexHeaderButton {
+  font: 18px/20px RobotoBold;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  background: #fff;
+  color: #404659;
+  display: block;
+  width: fit-content;
+  position: relative;
+  transition: 0.3s;
+}
+
+.indexHeaderButton::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #db9f3c;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.indexHeaderButton:hover {
+  background: #db9f3c;
+  color: #fff;
+}
+
+.indexHeaderButton:hover::after {
+  border-right: 10px solid #404659;
+}
+.indexAbout, .indexPluses, .indexSuccess, .indexTeachers {
+  padding: 120px 0 0;
+  text-align: center;
+  width: 100%;
+}
+.promoBlock {
+  font: 30px/30px RobotoBold;
+  color: #404659;
+  /* text-transform: uppercase; */
+  margin-bottom: 50px;
+  padding: 2%;
+  background: #db9f3c;
+}
+.courseBuy {
+  text-align: center;
+  width: 250px;
+  font: 18px/20px RobotoBold;
+  display: block;
+  padding: 15px 30px;
+  color: #fff;
+  background: #404659;
+  position: relative;
+  margin-top: 10px;
+  transition: 0.3s;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+}
+
+.courseBuy:hover {
+  background: #db9f3c;
+}
+
+.courseBuy::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #db9f3c;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.courseBuy:hover::after {
+  border-right: 8px solid #404659;
+}
+.indexAboutTop, .indexPlusesTop, .indexSuccessTop, .indexTeachersTop {
+  font: 30px/30px RobotoBold;
+  color: #404659;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.indexAboutVideo {
+  max-width: 500px;
+  width: 100%;
+  height: 280px;
+}
+
+.indexAboutInfo {
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.indexAboutInfoTop {
+  font: 24px/30px RobotoBold;
+  color: #404659;
+  margin-bottom: 20px;
+}
+
+.indexAboutInfoBottom {
+  font: 20px/25px RobotoRegular;
+  color: #404659;
+}
+.indexAboutInfoBottomUl{
+    width: 93%;
+    padding-left: 7%;
+}
+
+.indexPlusesText {
+  margin: 0 auto 15px;
+  display: inline-block;
+  width: 80%;
+  font: 20px RobotoRegular;
+  vertical-align: top;
+  text-align: сenter;
+  font-size: 20px;
+}
+
+.indexPlusesItem {
+  max-width: 270px;
+  width: 100%;
+  margin: 30px 15px;
+  text-align: center;
+}
+
+.indexPlusesItemM50 {
+  margin-top: 100px;
+}
+
+.indexPlusesItemTop {
+  font: 22px/30px RobotoBold;
+  text-align: center;
+  color: #404659;
+  margin: 25px auto;
+}
+
+.indexPlusesItemBottom {
+  font: 16px/25px HNRoman;
+  color: #404659;
+}
+
+.indexPlusesItems {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.indexPlusesImg {
+  height: 100px;
+  width: auto;
+}
+
+.indexSuccessText {
+  font: 22px/30px RobotoBold;
+  color: #404659;
+  margin-bottom: 25px;
+}
+
+.indexSuccessItem {
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.indexSuccessItemText {
+  font: 18px/25px HNRoman;
+  color: #404659;
+}
+
+.indexSuccessItemText span {
+  font-family: HNBold;
+}
+
+.indexSuccessImg {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
+
+.indexTeachersItem {
+  width: 260px;
+  margin: 0 20px 30px;
+  text-align: left;
+}
+
+.indexTeachersImg {
+  width: 200px;
+  height: auto;
+}
+
+.indexTeachersItemTop {
+  font: 18px/20px RobotoBold;
+  margin: 20px 0;
+  color: #404659;
+}
+
+.indexTeachersItemBottom {
+  font: 16px/25px HNRoman;
+  color: #404659;
+}
+
+.indexTeachers {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.indexBuyCourse {
+  display: flex;
+  max-width: 400px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.indexBuyCourseText {
+  font: 30px/30px RobotoBold;
+}
+
+.indexBuyCourseA {
+  display: block;
+  font: 12px/20px RobotoBold;
+  color: #fff;
+  background: #db9f3c;
+  padding: 15px 20px;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+.indexBuyCourseA::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.indexBuyCourseA:hover {
+  background: #404659;
+}
+
+.indexBuyCourseA:hover::after {
+  border-right: 8px solid #db9f3c;
+}
+
+.buyWindow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10001;
+  background: rgba(64, 70, 89, 0.5);
+  display: flex;
+  cursor: pointer;
+}
+
+.buyWindowForm {
+  margin: auto;
+  background: #fff;
+  padding: 70px 30px;
+  width: fit-content;
+  transition: 0.3s;
+  -webkit-animation-name: showing;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation: showing 0.3s;
+  transform: scale(0.5);
+  animation-fill-mode: forwards;
+  cursor: default;
+  position: relative;
+}
+
+@-webkit-keyframes showing {
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes showing {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.courseItem {
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  padding: 30px;
+  max-width: 220px;
+  width: 100%;
+  margin: 0 35px 30px;
+}
+
+.courseItemTop {
+  font: 20px/25px RobotoBold;
+  text-align: center;
+  min-height: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.courseItemText {
+  font: 14px/20px HNRoman;
+  text-align: justify;
+  min-height: 80px;
+}
+
+.courseItemInfo {
+  font: 14px/20px HNBold;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.courseItemInfoChangeSchedule {
+  font: 14px/20px HNBold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.courseItemPrice {
+  font: 35px/35px RobotoBold;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.courseDesc {
+  font: 14px/40px RobotoBold;
+  width: 120px;
+  background: #db9f3c;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  transition: 0.3s;
+}
+
+.courseDesc::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.courseDesc:hover {
+  background: #404659;
+}
+
+.courseDesc:hover::after {
+  border-right: 10px solid #db9f3c;
+}
+
+.salesItem {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 35px 30px;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  border-radius: 3px;
+}
+
+.salesItemImg {
+  max-width: 400px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.salesItemTop {
+  font: 30px/30px RobotoBold;
+  margin: 30px auto;
+}
+
+.salesItemText {
+  font: 16px/20px HNRoman;
+  text-align: justify;
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.salesItemPrice {
+  font: 35px/40px RobotoBold;
+  text-align: center;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.salesItemPrice span {
+  font: 25px/40px RobotoBold;
+  text-decoration: line-through;
+}
+
+.salesItemPriceBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 340px;
+  margin: 0 auto 30px;
+}
+
+.salesItemMore {
+  font: 14px/20px RobotoBold;
+  max-height: 40px;
+  display: block;
+  padding: 10px 30px;
+  color: #fff;
+  background: #db9f3c;
+  position: relative;
+  transition: 0.3s;
+}
+
+.salesItemMore::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.salesItemMore:hover {
+  background: #404659;
+}
+
+.salesItemMore:hover::after {
+  border-right: 8px solid #db9f3c;
+}
+
+.carousel1 {
+  display: block;
+}
+
+.carousel2 {
+  display: none;
+}
+
+.nextPrev {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.firstCarousel, .secondCarousel {
+  background: #404659;
+  width: 15px;
+  height: 15px;
+  margin: 15px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.firstCarousel:hover, .secondCarousel:hover {
+  background: #797f91;
+}
+
+.closebuyWindow {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebuyWindow img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.closebuyWindow:hover {
+  opacity: 0.7;
+}
+
+
+/* COURSES */
+.courseTop {
+  font: 30px/30px RobotoBold;
+  margin: 60px auto 70px;
+}
+
+.courseTop a {
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.courseTop a:hover {
+  color: #db9f3c;
+}
+
+.courseItem {
+  max-width: 300px;
+  width: 100%;
+  margin: 50px 40px 0;
+}
+
+.courseBeauty {
+  padding: 35px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  margin-bottom: 70px;
+}
+
+.courseLeftTop {
+  font: 30px/30px RobotoBold;
+  text-align: center;
+  margin: 0 auto 30px;
+  text-transform: uppercase;
+}
+
+.courseLeftText {
+  font: 16px/25px HNRoman;
+  text-align: justify;
+}
+
+.courseLeftText2 {
+  font: 18px/25px RobotoRegular;
+  text-align: left;
+}
+
+.coursePrice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #db9f3c;
+  padding: 30px;
+  flex-wrap: wrap;
+  width: calc(100% - 60px);
+  margin: 0 auto 30px;
+  font: 30px/40px RobotoBold;
+}
+.coursePriceHeader {
+  display: block;
+  margin-top: -5%;
+  margin-bottom: 5%;
+  width: 100%;
+  font: 30px/40px RobotoBold;
+  color: #fff;
+} 
+.coursePriceLeft {
+  display: block;
+  font: 30px/40px RobotoBold;
+  color: #fff;
+  position: relative;
+}
+.courseBuy {
+  font: 18px/20px RobotoBold;
+  display: block;
+  padding: 15px 30px;
+  color: #fff;
+  background: #404659;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+}
+.courseBuy:hover {
+  background: #db9f3c;
+}
+.courseBuy::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #db9f3c;
+  z-index: 3;
+  transition: 0.3s;
+}
+.courseBuy:hover::after {
+  border-right: 8px solid #404659;
+}
+.courseSale {
+  width: 100%;
+  text-align: justify;
+  font: 30px/35px RobotoBold;
+  margin: 70px auto 30px;
+}
+.courseSale a {
+  color: #db9f3c;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.courseSale a:hover {
+  text-decoration: none;
+}
+.courseItemDesc {
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  background: #fff;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2)
+}
+.courseItemDesc:nth-child(2) {
+  margin-top: 70px;
+}
+.courseItemDescImg {
+  width: 70px;
+  height: auto;
+}
+.courseItemDescText {
+  font: 16px/25px HNRoman;
+  text-align: justify;
+  max-width: 280px;
+}
+
+@media all and (max-device-width:1024px) {
+  body {
+    min-width: 630px;
+  }
+  .indexHeaderInside {
+    width: 90%;
+  }
+  .indexHeaderTop {
+    font: 38px/40px RobotoBold;
+  }
+  .indexHeaderBottom {
+    font: 19px/20px RobotoBold;
+  }
+  .promoBlock {
+    font: 25px/30px RobotoBold;
+    margin: 0 auto 50px;
+    padding: 2%;
+    width: 90%;
+    background: #db9f3c;
+  }
+  .courseBuy {
+    text-align: center;
+    width: 250px;
+    font: 18px/20px RobotoBold;
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    background: #404659;
+    position: relative;
+    margin-top: 10px;
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  }
+  
+  .courseBuy:hover {
+    background: #db9f3c;
+  }
+  
+  .courseBuy::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    border: 8px solid transparent;
+    border-right: 8px solid #db9f3c;
+    z-index: 3;
+    transition: 0.3s;
+  }
+  
+  .courseBuy:hover::after {
+    border-right: 8px solid #404659;
+  }
+  .indexAboutTop, .indexPlusesTop, .indexSuccessTop, .indexTeachersTop {
+    font: 25px/30px RobotoBold;
+    margin: 0 auto 50px;
+    width: 90%;
+  }
+  .indexAboutInfo {
+    margin: 30px auto 0;
+    display: block;
+  }
+  .indexPlusesItemM50 {
+    margin: 30px 15px;
+  }
+  .indexSuccessItem {
+    height: auto;
+    margin: 0 auto 25px;
+    display: block;
+  }
+  .indexSuccessText {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+  .indexHeader {
+    background: url(../images/index/back-mobile.jpg) no-repeat center / cover;
+  }
+  .carousel1, .carousel2 {
+    max-height: auto;
+    overflow-y: scroll;
+  }
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+  .indexHeaderBottom {
+    font: 15px/20px RobotoBold;
+    margin: 15px auto;
+  }
+  .indexHeaderTop {
+    font: 18px/20px RobotoBold;
+  }
+  .indexHeaderButton {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .promoBlock {
+    text-align: center;
+    padding: 2%;
+    font: 18px/20px RobotoBold;
+    background: #db9f3c;
+  }
+  .courseBuy {
+    text-align: center;
+    width: 250px;
+    font: 18px/20px RobotoBold;
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    background: #404659;
+    position: relative;
+    margin-top: 10px;
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  }
+  
+  .courseBuy:hover {
+    background: #db9f3c;
+  }
+  
+  .courseBuy::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    border: 8px solid transparent;
+    border-right: 8px solid #db9f3c;
+    z-index: 3;
+    transition: 0.3s;
+  }
+  
+  .courseBuy:hover::after {
+    border-right: 8px solid #404659;
+  }
+  .indexAboutTop, .indexPlusesTop, .indexSuccessTop, .indexTeachersTop {
+    text-align: center;
+    font: 18px/20px RobotoBold;
+  }
+  
+  .indexAboutVideo {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .indexAboutInfo {
+    width: 90%;
+  }
+  .indexAboutInfoTop {
+    font: 18px/20px RobotoBold;
+  }
+  .indexAboutInfoBottom {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .indexPlusesText {
+    margin: 0 auto 15px;
+    display: inline-block;
+    width: 80%;
+    font: 20px RobotoRegular;
+    vertical-align: top;
+    text-align: сenter;
+    font-size: 20px;
+  }
+  .indexPlusesItem {
+    margin: 0 auto 45px;
+    max-width: none;
+    width: 90%;
+    text-align: justify;
+  }
+  .indexPlusesImg {
+    display: inline-block;
+    margin: 0 auto;
+    height: 50px;
+    vertical-align: top;
+  }
+  .indexPlusesItemTop {
+    margin: 0 auto 15px;
+    display: inline-block;
+    width: calc(100% - 80px);
+    vertical-align: top;
+    text-align: left;
+    font-size: 20px;
+    float: right;
+  }
+  .indexPlusesItemBottom {
+    display: inline-block;
+    margin: 15px auto 0;
+  }
+  .indexSuccessTop {
+    text-align: center;
+  }
+  .indexSuccessText {
+    font: 18px/20px RobotoBold;
+    text-align: justify;
+  }
+  .indexSuccessItemText {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    font: 16px/25px HNRoman;
+  }
+  .indexSuccessImg {
+    width: 90%;
+  }
+  .indexTeachersImg {
+    display: block;
+    margin: 0 auto;
+  }
+  .courseItem {
+    box-shadow: 0 10px 20px 0 rgba(64, 70, 89, 0.2);
+    margin: 0 auto 30px;
+  }
+  .salesItem {
+    max-width: 90%;
+    margin: 0 auto 30px;
+  }
+  .salesItemTop {
+    width: 90%;
+  }
+  .salesItemText {
+    max-width: 90%;
+  }
+  .salesItemText {
+    max-width: 90%;
+  }
+  .salesItemPriceBlock {
+    max-width: 90%;
+    justify-content: center;
+  }
+  .salesItemPrice {
+    text-align: center;
+  }
+  .salesItemMore {
+    margin: 30px auto 0;
+  }
+  .buyWindowForm {
+    padding: 50px 10px;
+    height: auto;
+  }
+  .carousel1, .carousel2 {
+    max-height: 100%;
+  }
+  .indexAbout {
+    padding: 50px 0 0;
+  }
+  .indexAbout, .indexPluses, .indexSuccess, .indexTeachers {
+    padding: 50px 0 0;
+  }
+  .indexAboutInfoBottomUl{
+    margin: 0;
+    padding-left: 7%;
+}
+}
+.indexSalesA{
+  font: 18px/20px RobotoBold;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  background: #fff;
+  color: #f35729;
+  display: block;
+  transition: 0.3s;
+}

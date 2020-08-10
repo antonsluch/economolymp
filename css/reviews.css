@@ -1,0 +1,96 @@
+.reviewsTop {
+  font: 30px/30px RobotoBold;
+  margin: 60px auto 70px;
+}
+
+.reviewsLeft, .reviewsRight {
+  max-width: 560px;
+  width: 100%;
+}
+
+.reviewItem {
+  max-width: 460px;
+  padding: 25px 30px;
+  width: 100%;
+  text-align: left;
+  margin: 0 20px 40px;
+  border-radius: 3px;
+  box-shadow: 0 0 7px 0 rgba(64, 70, 89, 0.2);
+}
+
+.reviewImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.reviewTop {
+  width: calc(100% - 35px - 100px);
+  text-align: left;
+  height: 100px;
+  margin-left: 35px;
+}
+
+.reviewTopName {
+  font: 18px/20px RobotoBold;
+}
+
+.reviewTopDesc {
+  margin-top: 20px;
+  font: 16px/20px HNRoman;
+}
+
+.reviewText {
+  width: 100%;
+  margin-top: 35px;
+  font: 16px/20px HNRoman;
+  text-align: justify;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reviewTextSmall {
+  height: auto;
+}
+
+.reviewTextShow {
+  position: relative;
+  display: block;
+  width: fit-content;
+  font: 10px/10px HNBold;
+  color: #fff;
+  background: #db9f3c;
+  padding: 8px 6px 5px;
+  float: right;
+  right: 0;
+  margin: 5px 0 0;
+  text-transform: uppercase;
+  width: 87px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reviewTextShow:hover {
+  background: #404659;
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+
+  .reviewTop {
+    margin: 35px 0 0;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .reviewItem {
+    width: 80%;
+    padding: 25px 7%;
+    margin: 0 auto 40px;
+  }
+}

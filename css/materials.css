@@ -1,0 +1,173 @@
+.materTop {
+  font: 30px/30px RobotoBold;
+  margin: 60px auto 70px;
+}
+
+.materText {
+  font: 16px/25px HNRoman;
+  max-width: 600px;
+  margin: 0 auto 70px;
+  text-align: justify;
+}
+
+.materText  b {
+  font-family: HNBold;
+}
+.materText  a {
+  text-decoration: underline;;
+}
+
+.materItems {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.materItem {
+  max-width: 210px;
+  padding: 25px;
+  box-shadow: inset 0 0 0 10000px rgba(64, 70, 89, 0.05), 0 5px 10px 0 rgba(64, 70, 89, 0.2);
+  margin: 20px;
+  text-align: center;
+}
+
+.materItemImg {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto 40px;
+}
+
+.materItemText {
+  font: 18px/25px RobotoBold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 210px;
+  transition: 0.3s;
+  min-height: 75px;
+}
+
+.materItem:hover .materItemText {
+  color: #db9f3c;
+  text-decoration: underline;
+}
+
+.materContent1 {
+  text-decoration: underline;
+  opacity: 0.8;
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.materContent1 li, .materContent2 li, .materContent3 li {
+  font: 14px/20px HNRoman;
+  min-height: 25px;
+}
+
+.materContent2, .materContent3 {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.mater1, .mater2, .mater3 {
+  cursor: pointer;
+}
+
+.materSpanContent {
+  cursor: pointer;
+  margin-bottom: 5px;
+  display: block;
+  width: fit-content;
+}
+
+.mater1 {
+  font: 30px/30px RobotoBold;
+  text-align: left;
+  max-width: 800px;
+  margin: 70px auto 30px;
+}
+
+.mater2 {
+  font: 25px/30px RobotoBold;
+  text-align: left;
+  text-indent: 20px;
+  max-width: 800px;
+  margin: 70px auto 30px;
+}
+
+.mater3 {
+  font: 20px/30px RobotoBold;
+  text-align: left;
+  text-indent: 60px;
+  max-width: 800px;
+  margin: 70px auto 30px;
+}
+
+.materText {
+  font: 14px/20px HNRoman;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.materImg {
+  display: block;
+  width: 600px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px auto 20px;
+}
+
+.materImg2 {
+  display: block;
+  width: 500px;
+  height: 350px;
+  object-fit: contain;
+  margin: 10px auto 20px;
+}
+
+.returnblock {
+  display: block;
+  width: 150px;
+  height: 30px;
+  font: 18px/30px RobotoBold;
+  color: #fff;
+  background: #db9f3c;
+  padding: 10px 15px;
+  position: relative;
+  top: 5px;
+  margin: auto;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+.returnblock:hover {
+  background: #404659;
+}
+
+@media all and (max-device-width:1024px) {
+  body {
+    min-width: 630px;
+  }
+  .materContent1, .mater1, .mater2, .mater3, .materText {
+    max-width: 600px;
+  }
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+  .materContent1, .mater1, .mater2, .mater3, .materText {
+    max-width: 90%;
+  }
+  .materImg, .materImg2 {
+    max-width: 90%;
+  }
+  .mater1, .mater2, .mater3 {
+    text-indent: 0;
+  }
+}

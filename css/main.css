@@ -1,0 +1,724 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto_Slab/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url(../fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'HNBold';
+  src: url(../fonts/Helvetica_Neue/HelveticaNeueCyr-Bold.otf);
+}
+
+@font-face {
+  font-family: 'HNLight';
+  src: url(../fonts/Helvetica_Neue/HelveticaNeueCyr-Light.otf);
+}
+
+@font-face {
+  font-family: 'HNRoman';
+  src: url(../fonts/Helvetica_Neue/HelveticaNeueCyr-Roman.otf);
+}
+
+.iT {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.middle::before {
+  content: "";
+  display: inline-block;
+  min-height: inherit;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.inside {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+small,
+strike,
+strong,
+b,
+i,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+canvas,
+footer,
+header,
+menu,
+nav,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  background: #fff;
+  text-align: center;
+  color: #404659;
+}
+
+.menuMob {
+  display: none;
+}
+
+.menuMobBottom {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 200px;
+  background: #fff;
+  z-index: 10000;
+  list-style-type: none;
+  padding: 40px 0 25px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .08);
+}
+
+.menuMobItem {
+  font: 12px/15px RobotoBold;
+}
+
+.menuMobItem a {
+  display: block;
+  padding: 20px 0;
+}
+
+.menuMobTop {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid rgba(64, 70, 89, 0.2);
+}
+
+.menuMobLogoA {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.menuMobLogoA img {
+  height: 30px;
+}
+
+.menuMobMenu {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 10001;
+  height: 30px;
+  padding: 15px;
+}
+
+.menuMain {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10000;
+  box-shadow: 0 0 3px 0 rgba(64, 70, 89, 0.25);
+}
+
+.menuMargin {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 70px;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menuUl {
+  width: fit-content;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menuLi {
+  font: 16px/20px RobotoBold;
+  color: #404659;
+  margin: 15px 40px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.menuLi:nth-last-child(1) {
+  padding: 0;
+}
+
+.menuLiA {
+  padding: 10px 20px;
+  display: block;
+}
+
+.menuDot {
+  background: url(../images/dot.png);
+  background-size: cover;
+  height: 4px;
+  width: 4px;
+}
+
+.menuLi:hover {
+  background: #db9f3c;
+  color: #fff;
+}
+
+.menuSmall {
+  position: absolute;
+  display: block;
+  width: fit-content;
+  text-align: left;
+  transform: scale(0);
+  transform-origin: left top;
+  list-style-type: none;
+  opacity: 0;
+  left: 0;
+  top: 40px;
+  transition: 0.3s;
+  color: #fff;
+  background: #db9f3c;
+}
+
+.menuNext:hover .menuSmall {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.menuSmallItem a {
+  padding: 15px 20px;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menuSmallItem:hover {
+  text-decoration: underline;
+}
+
+.menuMobP {
+  display: block;
+  font: 12px/20px RobotoBold;
+  color: #fff;
+  background: #db9f3c;
+  padding: 10px 15px;
+  transition: 0.3s;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menuP {
+  display: block;
+  font: 12px/20px RobotoBold;
+  color: #fff;
+  background: #db9f3c;
+  padding: 10px 15px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+.menuP.getReady {
+  position: relative;
+  max-width: 1000px;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  padding: 30px 15px;
+  margin: 120px auto 0 auto;
+}
+
+.menuP.getReadyM {
+  margin: 60px auto;
+}
+
+.menuP::after,
+.menuMobP::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.menuP:hover {
+  background: #404659;
+}
+
+.menuP:hover::after {
+  border-right: 8px solid #db9f3c;
+}
+
+.headerLogo {
+  height: 40px;
+  width: auto;
+  position: relative;
+}
+
+.headerLogoA {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 20;
+}
+
+footer {
+  background: #404659;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  margin-top: 120px;
+}
+
+.footerItem1 {
+  max-width: 230px;
+  width: 100%;
+}
+
+.footerItemTop {
+  font: 16px/20px RobotoBold;
+  color: #fff;
+  text-align: left;
+}
+
+.footerItemBottom {
+  font: 12px/20px HNRoman;
+  margin-top: 10px;
+  color: #fff;
+  text-align: justify;
+}
+
+.footerItemImg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.footerItemImg:hover {
+  opacity: 0.5;
+}
+
+.footerItemImgLeftRight {
+  margin: 0 50px;
+}
+
+.footerItemImgRight {
+  margin: 0 50px 0 0;
+}
+
+.footerItemA {
+  font: 10px/15px RobotoBold;
+  color: #fff;
+  width: 100%;
+  text-align: justify;
+  display: block;
+  margin: 10px auto 0;
+  transition: 0.3s;
+}
+
+.footerItemA:hover {
+  text-decoration: underline;
+}
+
+.footerTextA {
+  text-decoration: underline;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.footerTextA:hover {
+  opacity: 1;
+  background: #db9f3c;
+  font-size: 14px;
+  box-shadow: 0 0 0 10px #db9f3c;
+  border-radius: 1px;
+  z-index: 10;
+  position: relative;
+}
+
+.scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(64, 70, 89, 0.2);
+  background: #fff url(../images/arrow.png) no-repeat center center / 20px;
+}
+
+.olympiads {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10001;
+  background: rgba(64, 70, 89, 0.5);
+  display: flex;
+  cursor: pointer;
+}
+
+.olympiadsForm {
+  margin: auto;
+  background: #fff;
+  padding: 70px 30px;
+  width: fit-content;
+  transition: 0.3s;
+  -webkit-animation-name: showing;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation: showing 0.3s;
+  transform: scale(0.5);
+  animation-fill-mode: forwards;
+  cursor: default;
+  position: relative;
+}
+
+@-webkit-keyframes showing {
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes showing {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.olympiadsClose {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.olympiadsClose img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.olympiadsClose:hover {
+  opacity: 0.7;
+}
+
+.olympiadsBtn {
+  display: block;
+  font: 12px/20px RobotoBold;
+  color: #fff;
+  background: #db9f3c;
+  padding: 10px 15px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: 0.3s;
+  z-index: 20;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0px rgba(255, 255, 255, 0.2);
+}
+
+.olympiadsBtn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 8px solid #404659;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.olympiadsBtn:hover {
+  background: #404659;
+  box-shadow: 0 0 4px 0px #db9f3c;
+}
+
+.olympiadsBtn:hover::after {
+  border-right: 8px solid #db9f3c;
+}
+
+.olympiadsText {
+  font: 20px/30px RobotoBold;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.olympiadsInput {
+  width: 210px;
+  color: #404659;
+  background: #fff;
+  border: 0;
+  text-indent: 20px;
+  padding: 8px 5px;
+  margin: 30px 10px;
+  outline: none;
+  font: 14px/25px HNRoman;
+
+  -webkit-border: 2px solid #404659;
+  border: 2px solid #404659;
+  transition: 0.3s;
+}
+
+.olympiadsInput:hover {
+  box-shadow: inset 0 0 0 2px rgba(64, 70, 89, 0.5);
+}
+
+.olympiadsInput::placeholder {
+  color: #404659;
+}
+
+.olympiadsFormBtn {
+  background: #db9f3c;
+  font: 14px/25px RobotoBold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  border: 0;
+  transition: 0.3s;
+  margin: 30px 10px;
+  cursor: pointer;
+}
+
+.olympiadsFormBtn:hover {
+  background: #c58d30;
+}
+
+.thanks {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10001;
+  background: rgba(64, 70, 89, 0.5);
+  display: flex;
+  cursor: pointer;
+}
+
+.thanksText {
+  margin: auto;
+  background: #fff;
+  padding: 30px 30px;
+  font: 20px/30px RobotoBold;
+  width: fit-content;
+  position: relative;
+}
+
+@media all and (max-device-width:1024px) {
+  body {
+    min-width: 630px;
+  }
+
+  #vk_community_messages {
+    display: none;
+  }
+
+  .menuLi {
+    margin: 25px 20px;
+  }
+
+  .menuP {
+    top: 70px;
+  }
+
+  .footerItem {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footerItem:nth-child(2) {
+    padding: 50px 0;
+  }
+
+  .footerItemA {
+    margin: 0 auto;
+    max-width: 270px;
+    padding: 0;
+  }
+
+  .menuMain {
+    display: none;
+  }
+
+  .menuMob {
+    display: block;
+  }
+
+  .menuMargin {
+    padding-top: 60px;
+  }
+
+  .scrollTop {
+    display: block;
+  }
+
+  .olympiadsBtn {
+    left: 10px;
+    bottom: 10px;
+    padding: 8px 15px;
+  }
+
+  .menuP.getReady {
+    margin: 50px 20px 0 20px;
+  }
+
+  .menuP.getReadyM {
+    margin: 70px 20px 70px 20px;
+  }
+}
+
+@media all and (max-device-width:425px) {
+  body {
+    min-width: 320px;
+  }
+
+  .headerLogo {
+    height: auto;
+    width: 250px;
+    margin: 75px auto 35px;
+  }
+
+  .menuP {
+    top: 150px;
+  }
+
+  .menuUl {
+    display: block;
+  }
+
+  .menuDot {
+    display: none;
+  }
+
+  .menuLi {
+    display: inline-block;
+    margin: 15px 10px;
+  }
+
+  .menuNext {
+    z-index: 1;
+  }
+
+  .footerItemA {
+    padding: 0;
+  }
+
+  .coursePriceHeader {
+    font: 7vw/9vw RobotoBold !important;
+  }
+}
