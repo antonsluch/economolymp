@@ -37,7 +37,6 @@ if($_POST['courses_f']){
     $headers = "Content-Type: text/html; charset=utf-8\r\n"."From: lecture@economolymp.ru\r\n".'Reply-To: '.$emailfrom;
     mail('angstudio@yandex.ru', $subjectlev, $service, $headers); //Отправка письма с помощью функции mail
 
-    $apiKey = '0b7d2cbcd6132e636dbaf47935a47e91-us19';
     $listID = '41255a1f5b';
 
     $memberID = md5(strtolower($email));
